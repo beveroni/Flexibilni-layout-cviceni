@@ -1,0 +1,38 @@
+/* intuitivni box-sizing */
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  font: 16px/1.5 sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-family: Raleway;
+}
+
+p {
+  font-family: Homemade Apple;
+  font-size: 1.5rem;
+}
+
+/*
+Nastylujte header tak, aby byl nadpis a podnadpis vedle sebe, na opačných koncích stránky. Text podnadpisu zarovnejte doprava
+
+Nastylujte galerii tak, aby byly vedle sebe dva sloupce obrázků. 
+Potom zkuste třeba tři nebo čtyři sloupce. 
+
+Pro každou variantu si pomocí devtools udělejte screenshot.
+*/
+
+

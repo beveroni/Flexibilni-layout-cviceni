@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 ::after,
 ::before {
@@ -27,6 +28,7 @@ p {
 }
 
 /*
+
 Nastylujte header tak, aby byl nadpis a podnadpis vedle sebe, na opačných koncích stránky. Text podnadpisu zarovnejte doprava
 
 Nastylujte galerii tak, aby byly vedle sebe dva sloupce obrázků. 
@@ -34,5 +36,39 @@ Potom zkuste třeba tři nebo čtyři sloupce.
 
 Pro každou variantu si pomocí devtools udělejte screenshot.
 */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.foto {
+  flex: 50%;
+}
+
+p {
+  text-align: end;
+}
 
 
+
+
+@media (min-width: 600px) {
+
+  /* Tři sloupce */
+  .foto {
+    flex: calc(100% / 3);
+  }
+}
+
+@media (min-width: 1000px) {
+
+  /* Čtyři sloupce. */
+  .foto {
+    flex: 25%;
+  }
+}
